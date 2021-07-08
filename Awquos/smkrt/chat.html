@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>Smart Bottle</title>
+</head>
+<body>
+     <!-- navbar -->
+     <nav class="navbar">
+        <div class="navbar__container">
+          <a href="loginmenu.html" id="navbar__logo">SMART BOTTLE</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="loginmenu.html" class="navbar__links" id="home-page">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__links" id="about-page">About</a>
+            <li class="navbar__item">
+              <a href="loginmenu.html" class="navbar__links" id="services-page"
+                >Drinks</a>
+            </li>
+            <li class="navbar__item">
+                <a href="chat.html" class="navbar__links" id="chat-page">Constultation</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="userProfile.html" class="button" id="signup">You</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left">
+                <div class="top">
+                    <input type="text" placeholder="Search" />
+                    <a href="javascript:;" class="search"></a>
+                </div>
+                <ul class="people">
+                    <li class="person" data-chat="person1">
+                        <img src="doctor-1659516-1410038.png" alt="" />
+                        <span class="name">Dr.Thomas</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="preview">I need you help.</span>
+                    </li>
+                    <li class="person" data-chat="person2">
+                        <img src="doctor-1659516-1410038.png" alt="" />
+                        <span class="name">Dr.Gregory</span>
+                        <span class="time">1:44 PM</span>
+                        <span class="preview">Okay, thanks Doctor</span>
+                    </li>
+                    <li class="person" data-chat="person3">
+                        <img src="doctor-1659516-1410038.png" alt="" />
+                        <span class="name">Dr.Louis</span>
+                        <span class="time">2:09 PM</span>
+                        <span class="preview">Hopefully i can get rid of my diarrea.</span>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="right">
+                <div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
+                <div class="chat" data-chat="person1">
+                    <div class="conversation-start">
+                        <span>Today, 6:48 AM</span>
+                    </div>
+                    <div class="bubble you">
+                        Hello,Doctor Thomas.
+                    </div>
+                    <div class="bubble you">
+                        I need you help.
+                    </div>
+                </div>
+                <div class="chat" data-chat="person2">
+                    <div class="conversation-start">
+                        <span>Wednesday, 5:38 PM</span>
+                    </div>
+                    <div class="bubble you">
+                        Hello, Dr.Gregory
+                    </div>
+                    <div class="bubble you">
+                        Its kind of weird,i cannot taste any food.
+                    </div>
+                    <div class="bubble me">
+                        Hello,you should go check to the nearest hospital.
+                    </div>
+                    <div class="bubble me">
+                        It might be a normal fever.
+                    </div>
+                    <div class="bubble you">
+                        Okay, thanks Doctor
+                    </div>
+                </div>
+                <div class="chat" data-chat="person3">
+                    <div class="conversation-start">
+                        <span>Tuesday, 3:38 AM</span>
+                    </div>
+                    <div class="bubble you">
+                        Hello,Dr.Louis
+                    </div>
+                    <div class="bubble you">
+                        I think I have diarrhea,what do I need to cure it?
+                    </div>
+                    <div class="bubble me">
+                        Hello.
+                    </div>
+                    <div class="bubble me">
+                        You need to go to the pharmacy and ask for a diapet.
+                    </div>
+                    <div class="bubble you">
+                        Okay,thank doctor
+                    </div>
+                    <div class="bubble you">
+                        Hopefully i can get rid of my diarrea
+                    </div>
+
+                </div>
+
+
+
+                <div class="write">
+                    <a href="javascript:;" class="write-link attach"></a>
+                    <input type="text" />
+                    <a href="javascript:;" class="write-link smiley"></a>
+                    <a href="javascript:;" class="write-link send"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
